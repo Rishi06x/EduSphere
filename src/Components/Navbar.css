@@ -6,12 +6,17 @@
 }
 
 .navbar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 16px 24px;
     background-color: var(--primary);
-    color:var(--text);
+    color: var(--text);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 #navLinks{
@@ -32,6 +37,8 @@
 
 #navLinks button{
     padding: 8px 16px;
+    background-color: transparent;
+    color: var(--text);
     border: 2px solid var(--text);
     border-radius: 32px;
     font-size: 14px;

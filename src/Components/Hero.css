@@ -6,13 +6,14 @@
 }
 
 .hero{
-    height: 90vh;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .image-container{
@@ -36,16 +37,19 @@
 }
 
 .hero-img{
-    width: 90%; 
-    height: 90%;
-    margin: 0 auto; 
+    width: 100%; 
+    height: 80%;
+    border-radius: 9999px;
     object-fit: cover;
     display: block;
     filter: brightness(70%);
-    border-radius: 9999px;
+    margin-top: 64px;
 }
 
 .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     max-width: 800px;
     padding: 0 16px;
@@ -54,14 +58,23 @@
 }
 
 h1{
-    font-size: 48px;
-    color: var(--text); 
-}
-h4{
-    color: var(--text); 
+    font-size: clamp(24px, 5vw, 48px);
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+    line-height: 1.2;
 }
 
-.hero-content > button{
+h4{
+    color: var(--text);
+    font-size: clamp(12px, 5vw, 18px);
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.hero-content button{
+    width: fit-content;
     margin-top: 24px;
     padding: 12px 24px;
     font-size: 16px;
@@ -72,8 +85,16 @@ h4{
     border-radius: 32px;
     cursor: pointer;
     transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .hero-content > button:hover{
     background-color: var(--tertiary);
+    transform: translateY(-2px);
+}
+
+#rightArrow{
+    width: 24px;
 }
