@@ -2,37 +2,37 @@ import './Program.css';
 import programImage1 from '../assets/programImage1.png'
 import programImage2 from '../assets/programImage2.png'
 import programImage3 from '../assets/programImage3.png'
+import Title from './Title';
 
 const Program = () => {
     return (
         <div className="container">
-            <h2>Our Program</h2>
-            <h4>What we Offer</h4>
+            <Title title="Our Programs" subTitle="Choose a program that fits your career goals"/>
             <div className="program-cards">
                   <div class="card">
                     <img src={programImage1} alt="Card Image"/>
                     <div class="card-content">
-                        <h3>Card Title</h3>
-                        <p>Short description goes here.</p>
+                        <h3>Engineering</h3>
+                        <p>Learn to design, build, and innovate using modern technology and engineering principles to solve real-world challenges.</p>
                     </div>
                 </div>
                   <div class="card">
                     <img src={programImage3} alt="Card Image"/>
                     <div class="card-content">
-                        <h3>Card Title</h3>
-                        <p>Short description goes here.</p>
+                        <h3>Medical Science</h3>
+                        <p>Study the science of healthcare and the human body, preparing for careers that focus on healing, research, and medical advancement.</p>
                     </div>
                 </div>
                   <div class="card">
                     <img src={programImage2} alt="Card Image"/>
                     <div class="card-content">
-                        <h3>Card Title</h3>
-                        <p>Short description goes here.</p>
+                        <h3>Architecture</h3>
+                        <p>Explore the art and science of designing sustainable, functional, and visually inspiring buildings and spaces.</p>
                     </div>
                 </div>
             </div>
             <div className="facilities">
-                <h2>Career Support</h2>
+                <Title title="Career Support"/>
                 <div className='facility-list'>
                     <h4>Internship opportunities</h4>
                     <h4>Industry projects</h4>

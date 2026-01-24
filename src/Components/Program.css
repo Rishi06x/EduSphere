@@ -10,16 +10,6 @@
 .container{
     height: 100vh;
     padding-top: 100px;
-    text-align: center;
-}
-
-.container h2{
-    color: var(--accent);
-    font-size: 28px;
-}
-.container h4{
-    color: var(--primary);
-    font-size: 18px;
 }
 
 .program-cards {
@@ -53,6 +43,8 @@
 .card-content {
   position: absolute;
   inset: 0;
+  padding: 12px;
+  text-align:center;
   background: rgba(0,0,0,0.6);
   color: white;
   display: flex;
@@ -77,13 +69,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-}
-
-.facility-list{
+    text-align: left;
+  }
+  
+  .facility-list{
     margin-top: 24px;
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .facility-list h4:nth-child(odd){
