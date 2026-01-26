@@ -4,7 +4,7 @@ import rightArrow from '../assets/right-arrow.png'
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <div className='hero' id='home'>
             <div className="overlay"></div>
             <div className="image-container">
                 <img src={image} alt="hero" className="hero-img" />

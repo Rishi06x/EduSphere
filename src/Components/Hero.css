@@ -96,10 +96,16 @@ h4{
     transform: translateY(-2px);
 }
 
-/* Arrow Icon */
+.hero-content button:hover #rightArrow{
+    transform: translateX(4px);
+    transition: transform 0.2s ease;
+}
+
 #rightArrow{
     width: 24px;
 }
+
+
 
 /* ================= TABLET ================= */
 
