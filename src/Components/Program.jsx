@@ -6,7 +6,7 @@ import Title from './Title';
 
 const Program = () => {
     return (
-        <div className="container" id='program'>
+        <div className="program-container" id='program'>
             <Title title="Our Programs" subTitle="Choose a program that fits your career goals"/>
             <div className="program-cards">
                   <div class="card">
