@@ -1,23 +1,24 @@
 .about-container{
-    padding: 80px 0;
+  padding: 80px 0;
+  /* min-height: 100vh;  */
 }
 
 .about-section{
     display: flex;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 60px;
+    padding: 80px;
     gap: 40px;
 }
 
 .about-left, .about-right{
     flex: 1;
-    padding: 20px;
 }
 
 .about-left img{
     width: 100%;
-    max-height: 350px;
+    /* max-height: 350px; */
     height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
