@@ -24,7 +24,7 @@
     display: flex;
     gap: 24px;
     align-items: center;
-    transition: all 0.3s ease;
+    transition: all 0.9s ease;
 }
 
 #navLinks a{
@@ -33,7 +33,7 @@
 }
 
 #navLinks a:hover{
-    color: var(--tertiary);
+    color: var(--primary);
 }
 
 #navLinks button{

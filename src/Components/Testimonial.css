@@ -48,7 +48,8 @@
 }
 
 .testimonial-card {
-  flex: 0 0 32%; 
+  flex: 0 0 32%;
+  height: 250px; 
   background: var(--primary );
   color: var(--text);
   padding: 25px;
