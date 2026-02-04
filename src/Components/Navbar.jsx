@@ -27,7 +27,7 @@ const Navbar = () => {
             <a href="#about">About Us</a>
             <a href="#campus">Campus</a>
             <a href="#testimonials">Testimonials</a>
-            <button>Contact Us</button>
+            <a href="#contact" id='btn'>Contact Us</a>
         </div>
         <div className='hamburger-icon' onClick={() => setIsOpen(!isOpen)}>
             <span></span>

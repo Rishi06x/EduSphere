@@ -5,6 +5,7 @@ import Program from './Components/Program'
 import About from './Components/About'
 import Campus from './Components/Campus'
 import Testimonial from './Components/Testimonial'
+import Contact from './Components/Contact'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <About/>
             <Campus/>
             <Testimonial/>
+            <Contact/>
         </>
     );
 }

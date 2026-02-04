@@ -33,10 +33,10 @@
 }
 
 #navLinks a:hover{
-    color: var(--primary);
+    color: var(--tertiary);
 }
 
-#navLinks button{
+#navLinks #btn{
     padding: 8px 16px;
     background-color: transparent;
     color: var(--text);
@@ -47,7 +47,7 @@
     transition: all 0.2s ease;
 }
 
-#navLinks button:hover{
+#navLinks #btn:hover{
     background-color: var(--text);
     color: var(--primary);
     cursor: pointer;
