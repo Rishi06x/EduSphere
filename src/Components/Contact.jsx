@@ -9,9 +9,9 @@ const Contact = () => {
         <div className="contact-left">
           <h2>Send us a message</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            fugiat officia nam magnam neque qui maxime itaque suscipit
-            laboriosam incidunt!
+            Have questions about our programs or the application process? Reach
+            out today, and our dedicated admissions team will guide you through
+            every step of your journey toward academic excellence.
           </p>
           <p>✉️ contact@gmail.com</p>
           <p>📞 +91 9856956895</p>

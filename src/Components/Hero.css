@@ -1,11 +1,10 @@
-:root{
-    --primary:#000C4F;
-    --secondary:#E5E7EB;
-    --tertiary:#9CA3AF;
-    --text:#FFFFFF;
+:root {
+  --primary: #000c4f;
+  --secondary: #212ea0;
+  --text-main: #333;
+  --text-light: #676767;
+  --transition: all 0.4s ease;
 }
-
-/* ================= HERO SECTION ================= */
 
 .hero{
     width: 100%;
@@ -18,14 +17,12 @@
     overflow: hidden;
 }
 
-/* Background image container */
 .image-container{
     position: absolute; 
     inset: 0;
     padding: 20px;
 }
 
-/* Overlay */
 .overlay{
     position: absolute;
     inset: 0;
@@ -33,7 +30,6 @@
     z-index: 1;
 }
 
-/* Hero Image */
 .hero-img{
     width: 100%; 
     height: 80%;
@@ -44,7 +40,6 @@
     margin-top: 64px;
 }
 
-/* Hero Content */
 .hero-content{
     display: flex;
     flex-direction: column;
@@ -56,7 +51,6 @@
     z-index: 2; 
 }
 
-/* Headings */
 h1{
     font-size: clamp(24px, 5vw, 48px);
     font-weight: 700;
@@ -73,7 +67,6 @@ h4{
     margin-bottom: 8px;
 }
 
-/* CTA Button */
 .hero-content button{
     width: fit-content;
     margin-top: 24px;
@@ -81,7 +74,7 @@ h4{
     font-size: 16px;
     font-weight: 600;
     color: #333333; 
-    background-color: var(--secondary);
+    background-color: var(--text);
     border: none;
     border-radius: 32px;
     cursor: pointer;
@@ -107,11 +100,10 @@ h4{
 
 
 
-/* ================= TABLET ================= */
 
 @media (max-width: 1024px) {
     .hero-img{
-        height: 75%;
+        height: 95%;
         margin-top: 72px;
     }
 
@@ -120,7 +112,6 @@ h4{
     }
 }
 
-/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
     .image-container{
@@ -128,7 +119,7 @@ h4{
     }
 
     .hero-img{
-        height: 70%;
+        height: 90%;
         margin-top: 72px;
         border-radius: 24px;
     }
@@ -155,12 +146,11 @@ h4{
     }
 }
 
-/* ================= SMALL MOBILE ================= */
 
 @media (max-width: 480px) {
     .hero-img{
-        height: 50%;
-        margin-top: 24px;
+        height: 90%;
+        margin-top: 36px;
     }
 
     h1{

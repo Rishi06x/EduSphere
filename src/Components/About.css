@@ -1,50 +1,108 @@
-.about-container{
-  padding: 80px 0;
-  /* min-height: 100vh;  */
+:root {
+  --primary: #000c4f;
+  --secondary: #212ea0;
+  --text-main: #333;
+  --text-light: #676767;
+  --transition: all 0.4s ease;
 }
 
-.about-section{
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    padding: 80px;
-    gap: 40px;
+.about {
+  min-height: 100vh;
+  padding: 100px 5%;
+  background-color: #fff;
+  display: flex;
 }
 
-.about-left, .about-right{
-    flex: 1;
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px; 
 }
 
-.about-left img{
-    width: 100%;
-    /* max-height: 350px; */
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
+/* Image Styling */
+.about-image-wrapper {
+  flex-basis: 40%;
+  position: relative;
 }
 
-.about-right h2{
-    font-size: 36px;
-    margin-bottom: 20px;
+.about-img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  box-shadow: 20px 20px 0px -5px var(--secondary); 
 }
 
-.about-right p{
-    font-size: 18px;
-    line-height: 1.8;
+.image-accent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (max-width: 768px) {
-    
-  .about-section{
+.about-content {
+  flex-basis: 55%;
+}
+
+.about-content .title {
+  text-align: left;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  color: var(--text-light);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  margin-top: 10px;
+  padding: 12px 30px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.about-btn:hover {
+  background-color: var(--secondary);
+  box-shadow: 0 5px 15px rgba(0, 12, 79, 0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .about-container {
     flex-direction: column;
-    padding: 20px;
+    gap: 60px;
+    text-align: center;
   }
-  .about-right h2{
-  font-size: 28px;
+
+  .about-image-wrapper, 
+  .about-content {
+    flex-basis: 100%;
+    max-width: 600px;
   }
-  .about-right p{
-  font-size: 16px;
+
+  .about-img {
+    box-shadow: 10px 10px 0px -2px var(--secondary); /* Smaller shadow on mobile */
+  }
+
+  .about-content .title {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 60px 20px;
   }
 }

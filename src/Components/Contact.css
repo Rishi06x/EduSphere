@@ -3,58 +3,66 @@
   min-height: 100vh;
 }
 
-.contact-container{
-    display: flex;
-    padding: 64px;
-    justify-content: space-evenly;
+.contact-container {
+  display: flex;
+  padding: 64px;
+  justify-content: space-evenly;
 }
 
-.contact-left{
-    max-width: 550px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    line-height: 1.8rem;
-    /* text-align: center; */
+.contact-left {
+  max-width: 550px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  line-height: 1.8rem;
+  /* text-align: center; */
 }
 
-.contact-right{
-    max-width: 550px;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact-right {
+  max-width: 550px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-right form{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .contact-right form input,
-.contact-right form textarea{
-    padding: 8px;
-    width: 450px;
-    border: none;
-    border-radius: 4px;
-    background-color: #7687e73d;
-
+.contact-right form textarea {
+  padding: 8px;
+  width: 450px;
+  border: none;
+  border-radius: 4px;
+  background-color: #7687e73d;
 }
 
-.contact-right form button{
-    padding: 12px;
-    width: 150px;
-    border: none;
-    border-radius: 4px;
-    background-color: var(--primary);
-    color: var(--text);
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.contact-right form button {
+  padding: 12px;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary);
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.contact-right form button:hover{
-    background-color: var(--tertiary);
+.contact-right form button:hover {
+  background-color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 32px;
+  }
+
 }
