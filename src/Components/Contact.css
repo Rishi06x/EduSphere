@@ -1,3 +1,10 @@
+:root{ 
+ --primary: #000c4f;
+  --secondary: #212ea0;
+  --text-main: #333;
+  --text-light: #676767;
+}
+
 #contact {
   padding: 80px 0;
   min-height: 100vh;
@@ -59,10 +66,55 @@
 }
 
 @media (max-width: 768px) {
+
+  
+
   .contact-container {
     flex-direction: column;
     gap: 40px;
     padding: 32px;
   }
+
+  .contact-container {
+        flex-direction: column;
+        gap: 48px;
+        padding: 40px 20px; /* Reduced side padding */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-left {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .contact-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-right form {
+        width: 100%;
+        /* align-items: center; Centers the button */
+        text-align: left;
+    }
+
+    .contact-right form input,
+    .contact-right form textarea {
+        /* CRITICAL: Remove the fixed 450px width */
+        width: 100%; 
+        max-width: 100%;
+        padding: 14px; /* Slightly larger tap target for fingers */
+        font-size: 16px; /* Prevents iOS zoom-on-focus */
+        background-color: #7687e73d; /* Matching your theme */
+        border: 1px solid var(--text-main);
+    }
+
+    .contact-right form button {
+        width: 100%; /* Full width button is easier to click on mobile */
+        padding: 16px;
+        margin-top: 10px;
+        background-color: var(--primary);
+    }
 
 }

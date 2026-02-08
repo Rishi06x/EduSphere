@@ -1,136 +1,165 @@
-:root{
-    --primary:#000C4F;
-    --secondary:#E5E7EB;
-    --tertiary:#9CA3AF;
-    --text:#FFFFFF;
+:root {
+  --primary: #000c4f;
+  --secondary: #212ea0;
+  --text-main: #333;
+  --text-light: #676767;
+  --text: #fff;
 }
 
-.navbar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 64px;
-    background: transparent;
-    color: var(--text);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    transition: background 0.3s ease;
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 64px;
+  background: transparent;
+  color: var(--text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: background 0.3s ease;
 }
 
-.navbar #logo img{
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
+#logo h3 {
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: 700;
+  z-index: 10;
+  letter-spacing: 2px;
+  background-color: #ffffffce;
+  padding: 4px 12px;
+  border-radius: 24px;
 }
 
-#navLinks{
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    transition: all 0.9s ease;
+#logo h3 span:first-child {
+  color: var(--primary);
+}
+#logo h3 span:last-child {
+  color: var(--secondary);
 }
 
-#navLinks a{
-    color: var(--text);
-    text-decoration: none;
+#navLinks {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  transition: all 0.9s ease;
 }
 
-#navLinks a:hover{
-    color: var(--tertiary);
+#navLinks a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-#navLinks #btn{
-    padding: 8px 16px;
-    background-color: transparent;
-    color: var(--text);
-    border: 2px solid var(--text);
-    border-radius: 32px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.2s ease;
+#navLinks a:hover {
+  color: var(--text-light);
 }
 
-#navLinks #btn:hover{
-    background-color: var(--text);
-    color: var(--primary);
-    cursor: pointer;
+#navLinks #btn {
+  padding: 8px 16px;
+  color: var(--text);
+  border: 2px solid var(--text);
+  border-radius: 32px;
+  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
-.hamburger-icon{
-    /* opacity: 0; */
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.hamburger-icon span{
-    width: 25px;
-    height: 3px;
-    background-color: var(--text);
-    border-radius: 2px;
+#navLinks #btn:hover {
+  background-color: var(--text);
+  color: var(--primary);
+  cursor: pointer;
 }
 
-.dark-nav{
-    background-color: var(--primary);
-    color: var(--primary);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease, color 0.3s ease;
+.hamburger-icon {
+  /* opacity: 0; */
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+.hamburger-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text);
+  border-radius: 2px;
+}
+
+.dark-nav {
+  background-color: var(--primary);
+  /* color: var(--primary); */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 @media (max-width: 768px) {
-    #navLinks {
-        position: absolute;
-        top: 60px;
-        right: 8px;
-        background: var(--primary);
-        color: var(--text);
-        padding: 12px;
-        flex-direction: column;
-        width: 200px;
-        /* display: none; */
-        opacity: 0;
-        transform: translateY(-10px);
-        pointer-events: none;
+  #navLinks {
+    position: absolute;
+    top: 60px;
+    right: 8px;
+    background: var(--primary);
+    color: var(--text);
+    padding: 12px;
+    flex-direction: column;
+    width: 200px;
+    /* display: none; */
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
 
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }    
-    #navLinks.open {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+  #navLinks.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
 
-    .navbar.open .hamburger-icon span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .navbar.open .hamburger-icon span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    .navbar.open .hamburger-icon span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    
-    .hamburger-icon {
-        display: flex;
-    }
+  .navbar.open .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+  }
 
-    .navbar.close .hamburger-icon span:nth-child(2) {
-        opacity: 1;
-    }
-    
-    .navbar.close .hamburger-icon span:nth-child(1) {
-        transform: translateY(0px) rotate(0);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    .navbar.close .hamburger-icon span:nth-child(3) {
-        transform: translateY(0) rotate(0);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
+  .navbar.open .hamburger-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+  .navbar.open .hamburger-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .hamburger-icon {
+    display: flex;
+  }
+
+  .navbar.close .hamburger-icon span:nth-child(2) {
+    opacity: 1;
+  }
+
+  .navbar.close .hamburger-icon span:nth-child(1) {
+    transform: translateY(0px) rotate(0);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+  .navbar.close .hamburger-icon span:nth-child(3) {
+    transform: translateY(0) rotate(0);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
 }

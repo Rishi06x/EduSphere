@@ -2,7 +2,6 @@ import React from 'react';
 import './About.css';
 import Title from "./Title";
 import aboutImage from '../assets/about-img.jpg';
-// Optional: import play_icon from '../assets/play-icon.png'
 
 const About = () => {
   return (
@@ -10,7 +9,6 @@ const About = () => {
       <div className="about-container">
         <div className="about-image-wrapper">
           <img src={aboutImage} alt="University Campus" className="about-img" />
-          {/* Professional touch: An accent decoration or play button */}
           <div className="image-accent"></div> 
         </div>
         

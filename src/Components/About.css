@@ -82,7 +82,7 @@
   .about-container {
     flex-direction: column;
     gap: 60px;
-    text-align: center;
+    text-align: left;
   }
 
   .about-image-wrapper, 
@@ -92,7 +92,7 @@
   }
 
   .about-img {
-    box-shadow: 10px 10px 0px -2px var(--secondary); /* Smaller shadow on mobile */
+    box-shadow: 10px 10px 0px -2px var(--secondary); 
   }
 
   .about-content .title {

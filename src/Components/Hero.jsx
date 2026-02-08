@@ -1,5 +1,5 @@
 import './Hero.css';
-import image from '../assets/background.webp';
+import image from '../assets/image.png';
 import rightArrow from '../assets/right-arrow.png'
 
 const Hero = () => {
