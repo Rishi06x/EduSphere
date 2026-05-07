@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isOpen ? "open" : "close"} ${sticky ? "dark-nav" : ""}`}>
         <div id="logo">
-            <h3><span>Edu</span><span>Learn</span></h3>
+            <h3><span>Edu</span><span>Sphere</span></h3>
         </div>
         <div id="navLinks" className={`${isOpen ? "open" : ""}`}>
             <a href="#home">Home</a>
